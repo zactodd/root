@@ -10,6 +10,10 @@ class Faction(ABC):
         self.crafted_cards = []
 
     @abstractmethod
+    def stepup(self) -> List[Set]:
+        pass
+
+    @abstractmethod
     def birdsong(self) -> List[Set]:
         pass
 
