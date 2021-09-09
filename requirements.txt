@@ -1,0 +1,5 @@
+trueskill
+matplotlib
+numpy
+pillow
+networkx
