@@ -6,15 +6,12 @@ from typing import List
 
 
 class Clearing:
-    def __init__(self, idx: int, suit: Suit, num_build_slots: int, ruin_items: List[Item]=None) -> None:
+    def __init__(self, idx: int, suit: Suit, num_slots: int, has_ruin: bool) -> None:
         self.idx = idx
         self.suit = suit
-        if ruin_items is None:
-            self.build_slots = [None] * num_build_slots
-            self.has_ruin = False
-        else:
-            self.build_slots = [None] * (num_build_slots - 1) + [ruin_items]
-            self.has_ruin = True
+        self.has_ruin = True
+        self.num_slots = num_slots
+        self.build_slots = [None] * num_slots
 
         self.warriors = Counter()
         self.building = Counter()
