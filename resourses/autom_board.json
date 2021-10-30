@@ -1,0 +1,31 @@
+{
+  "name": "autum_board",
+  "edges" : {
+    "A": ["B", "C", "E"],
+    "B": ["A", "C", "D", "F"],
+    "C": ["A", "D"],
+    "D": ["B", "C", "H"],
+    "E": ["A", "F", "I"],
+    "F": ["B", "E", "G", "I", "K"],
+    "G": ["F", "H", "L"],
+    "H": ["D", "G", "L"],
+    "I": ["E", "F", "J"],
+    "J": ["I", "K"],
+    "K": ["F", "J", "L"],
+    "L": ["G", "H", "K"]
+  },
+  "nodes": {
+    "A": {"num_slots":  1, "has_ruin":  0, "suit": "FOX"},
+    "B": {"num_slots":  2, "has_ruin":  1, "suit": "RABBIT"},
+    "C": {"num_slots":  2, "has_ruin":  0, "suit": "RABBIT"},
+    "D": {"num_slots":  2, "has_ruin":  0, "suit": "MOUSE"},
+    "E": {"num_slots":  2, "has_ruin":  0, "suit": "MOUSE"},
+    "F": {"num_slots":  2, "has_ruin":  1, "suit": "FOX"},
+    "G": {"num_slots":  3, "has_ruin":  1, "suit": "MOUSE"},
+    "H": {"num_slots":  2, "has_ruin":  1, "suit": "FOX"},
+    "I": {"num_slots":  1, "has_ruin":  0, "suit": "RABBIT"},
+    "J": {"num_slots":  2, "has_ruin":  0, "suit": "FOX"},
+    "K": {"num_slots":  2, "has_ruin":  0, "suit": "MOUSE"},
+    "L": {"num_slots":  1, "has_ruin":  0, "suit": "RABBIT"}
+  }
+}
