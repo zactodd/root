@@ -17,5 +17,10 @@ class Board:
         for src, targets in graph_json["edges"].items():
             g.add_edges_from((src, targets))
             self.clearings.append(Clearing(idx=src, **graph_json["nodes"]))
+        return g
+
+    def visualise_board(self):
+        nx.draw(self.graph, with_labels=True)
+
 
 
