@@ -1,5 +1,5 @@
 {
-  "name": "autum_board",
+  "name": "autumn_board",
   "edges" : {
     "A": ["B", "C", "E"],
     "B": ["A", "C", "D", "F"],
